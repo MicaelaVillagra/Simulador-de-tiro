@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos al Simulador de Tiro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <h1>Curso Instructor de Tiro 2024</h1>
+        </nav>
+    </header>
+
+    <div id="bienvenida" class="bienvenida">
+        <h2>Bienvenidos al Simulador de Tiro.</h2>
+        <button id="siguiente">Siguiente</button>
+    </div>
+
+    <!-- Contenedor de instrucciones -->
+    <section id="instrucciones" class="instrucciones oculto">
+        <h3>Señales:</h3>
+        <div class="imagenes-container">
+            <ul class="imagen-color">
+                <li><img id="amarillo" src="img/amarillo.png"  alt="Civil"></li>
+                <li><img id="rojo" src="img/rojoo.png" alt="Civil" ></li>
+                <li><img id="azul" src="img/azul.png" alt="Civil" ></li>
+                <li><img id="verde" src="img/verde.png" alt="Civil"></li>
+
+            </ul>
+            <ul class="imagen-lista">
+                <li><img src="img/blanco1.jpeg" alt="Civil"></li>
+                <li><img src="img/blanco6.jpeg" alt="Blanco armado"></li>
+            </ul>
+        </div>
+        <button id="continuar-btn" class="continuar-btn">¿Estás listo para continuar?</button>
+    </section>
+
+
+    <!-- Cartel de cuenta regresiva -->
+    <div id="cuenta-regresiva" class="cuenta-regresiva"></div>
+    <main id="main">
+        <section class="contenedor">
+            <div id="figura" class="figura">
+                <img src="img/blanco1.jpeg" alt="Imagen 1" class="imagen" style="width: 20%;">
+                <img src="img/blanco2.jpeg" alt="Imagen 2" class="imagen" style="width: 20%;">
+                <img src="img/blanco3.jpeg" alt="Imagen 3" class="imagen" style="width: 20%;">
+                <img src="img/blanco4.jpeg" alt="Imagen 4" class="imagen" style="width: 20%;">
+                <img src="img/blanco5.jpeg" alt="Imagen 4" class="imagen" style="width: 20%;">
+                <img src="img/blanco6.jpeg" alt="Imagen final" class="imagen" style="width: 20%;">
+
+            </div>
+        </section>
+
+    </main>
+    <!-- Modal de confirmación -->
+    <div id="modalConfirmacion" class="modal oculto">
+        <div class="modal-contenido">
+            <p>Fin de la simulación. ¿Desea continuar?</p>
+            <button id="btnSi">Sí</button>
+            <button id="btnNo">No</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
